@@ -1,0 +1,89 @@
+---
+title: "300W Final Project Notes"
+author: "Benson Ou-yang"
+date: "07/07/2021"
+output: pdf_document
+---
+
+# Introduction to Random Forests
+
+## 1) Introduction
+
+- introduction of machine learning
+
+Simple definition:
+Machine learning is the field of study that gives computers the ability to learn without being explicitly programmed. (Samuel, 1959)
+
+More engineering-oriented definition: 
+A computer program is said to learn from experience E with respect to some task T and some performance measure P, if its performance on T, as measured by P, improves with experience E. (Mitchell, 1997)
+
+
+- types machine learning https://towardsdatascience.com/supervised-vs-unsupervised-learning-14f68e32ea8d
+
+Supervised, unsupervised
+
+- what are the differences?
+
+Supervised learning is classification where the goal is to find a relationship in the data.
+
+Unsupervised learning is clustering where the structure of the data is unknown and this type of algorithm can solve.
+
+https://bigdata-madesimple.com/top-10-real-life-examples-of-machine-learning/
+- examples of machine learning 
+
+Some examples include image recognition, speech recognition, medical diagnosis, and spam classification. (sort these into supervised and unsupervised, have examples for both)
+
+All of these type of problems is handled by inputting data known as the training set which the system uses to learn.
+
+- what is random forest
+
+supervised learning -> classification
+
+https://web.archive.org/web/20180602125325id_/http://ijarcsse.com/docs/papers/Volume_7/1_January2017/V7I1-01113.pdf
+Random forest is an ensemble Machine Learning Technique. (Abhilasha, 2017)
+
+Random forest uses decision trees as base classifier. Used for classification and regression of data. 
+
+Random forest is a classifier consisting of collection of tree-structured classifiers where independent random vectors are distributed identically and each tree cast a unit vote for the most popular class at input x.
+
+- what is ensemble
+
+Data mining technique composed of number of individual classifiers to classify the data to generate new instances of data. (rewrite)
+
+- what is model used for?
+- what is needed?
+
+
+
+## 2) Preliminaries
+
+- diagram of model
+- how it comes together
+
+- what are the requirements to run it?
+
+## 3) Development
+
+- what values does it take in and outputs? (x and y)
+- how is it trained?
+
+
+
+## 4) Testing
+
+- overfitting/underfitting, how to check
+
+- outputs
+- what does the model answer? 
+
+
+## 5) Discussion
+
+what are advantages/disadvantage using this versus another machine learning algorithm?
+
+- tie in introduction and conclude
+
+## 6) References
+
+(Random Forest, Breiman 2001) https://link.springer.com/content/pdf/10.1023/A:1010933404324.pdf
+(Random Forest: A Review, Goel and Abhilasha, 2017)  https://web.archive.org/web/20180602125325id_/http://ijarcsse.com/docs/papers/Volume_7/1_January2017/V7I1-01113.pdf

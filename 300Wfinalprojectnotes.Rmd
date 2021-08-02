@@ -57,33 +57,109 @@ Data mining technique composed of number of individual classifiers to classify t
 
 ## 2) Preliminaries
 
-- diagram of model
-- how it comes together
+- when was it developed
+
+Developed in 2001 by Leo Breiman
+
+- where is it popular these days
+
+https://builtin.com/data-science/random-forest-algorithm
+
+many fields like banking, stock market, medicine and e-commerce.
+
+finance: used to detect customers more likely to repay debt or use bank services more frequently. also detect fraud. in trading, used to determine stock's future
+
+healthcare: used to identify correct combination of components in medicine and analyze patients medical history to identify diseases
+
+e-commerce: determine whether customer actually like product or not. 
 
 - what are the requirements to run it?
+
+https://towardsdatascience.com/understanding-random-forest-58381e0602d2
+
+features that have some predictive power
+
+trees of forest and prediction need to be uncorrelated 
 
 ## 3) Development
 
 - what values does it take in and outputs? (x and y)
+
+Training set L with M features, and T number of trees in forest
+
+Outputs the Z, set with learned tree containing the predictions/answers
+
 - how is it trained?
 
+given training set L, form bootstrap training sets T_k, construct classifiers h(x,T_k) (decision trees), and let these vote to form bagged predictor. Aggregate votes for classifiers which T_k does not contain y,x. Known as out-of-bag classifer. Then out-of-bag estimate for generalization error is error rate of out-of-bag classifier on training set. 
 
+uses bootstrap to make multiple decision trees
+
+grow tree using CART methodology (explain CART methodology)
 
 ## 4) Testing
 
 - overfitting/underfitting, how to check
 
-- outputs
-- what does the model answer? 
+out of bag error/ confusion matrix
+
+The study of error estimates for
+bagged classifiers in Breiman (1996b), gives empirical evidence to show that the outof-bag estimate is as accurate as using a test set of the same size as the training set. Therefore, using the out-of-bag error estimate removes the need for a set aside test
+set. (Breiman, 2001)
+
+more trees, wont allow overfitting trees in model
 
 
 ## 5) Discussion
 
 what are advantages/disadvantage using this versus another machine learning algorithm?
 
-- tie in introduction and conclude
+- can measure which features are important (variable importance plot)
 
-## 6) References
+Examples from (Breiman, 2001)
+- relatively robust to outliers and noise 
+- lower generalization error than others
+- It gives useful internal estimates of error, strength, correlation and variable importance
+
+Since the error rate decreases as the number of combinations
+increases, the out-of-bag estimates will tend to overestimate the current error rate. To get
+unbiased out-of-bag estimates, it is necessary to run past the point where the test set error
+converges. But unlike cross-validation, where bias is present but its extent unknown, the
+out-of-bag estimates are unbiased (Breiman, 2001)
+
+Strength and correlation can also be estimated using out-of-bag methods. This gives
+internal estimates that are helpful in understanding classification accuracy and how to
+improve it. (Breiman, 2001)
+
+## 6) Conclusion 
+
+
+
+## 7) References
 
 (Random Forest, Breiman 2001) https://link.springer.com/content/pdf/10.1023/A:1010933404324.pdf
+
+
 (Random Forest: A Review, Goel and Abhilasha, 2017)  https://web.archive.org/web/20180602125325id_/http://ijarcsse.com/docs/papers/Volume_7/1_January2017/V7I1-01113.pdf
+
+(A. L. Samuel, "Some studies in machine learning using the game of checkers," in IBM Journal of Research and Development, vol. 44, no. 1.2, pp. 206-226, Jan. 2000, doi: 10.1147/rd.441.0206.) https://hci.iwr.uni-heidelberg.de/system/files/private/downloads/636026949/report_frank_gabel.pdf
+
+(A. Arfiani and Z. Rustam, "Ovarian Cancer Data Classification Using Bagging and Random Forest", AIP Conference Proceedings 2168, 020046, Nov. 2019)
+https://aip.scitation.org/doi/pdf/10.1063/1.5132473
+
+(Decision tree in R) https://www.tutorialspoint.com/r/r_decision_tree.htm
+
+(Random Forest in R)
+https://www.tutorialspoint.com/r/r_random_forest.htm
+
+(Complete Guide to Random Forest in R, D. Bhalla, 2015)
+https://www.listendata.com/2014/11/random-forest-with-r.html
+
+(A complete guide to random forest algorithm, Donges, 2019) https://builtin.com/data-science/random-forest-algorithm
+
+(Financial Fraud Detection Model: Based on Random Forest, C. Liu, Y. Chan, S. Kazmi, H. Fu, 2015)
+https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2625215
+
+(Tin Kam Ho, "Random decision forests," Proceedings of 3rd International Conference on Document Analysis and Recognition, 1995, pp. 278-282 vol.1, doi: 10.1109/ICDAR.1995.598994.) https://ieeexplore.ieee.org/document/598994
+
+(T. Santhanam and S. Sundaram, "Application of CART Algorithm in Blood Donors Classification", 2010) https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.165.8749&rep=rep1&type=pdf

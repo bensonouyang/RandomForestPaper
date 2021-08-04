@@ -91,7 +91,7 @@ Below is Figure \@ref(fig:bag), which is an image that is taken from Hands-On Ma
 \end{figure}
 
 
-A Random Forest model randomly selects a small group of input variables to split on at each node. Using CART methodology can grow the tree to maximum size (Breiman, 2001).  CART is known as Classification and Regression Trees. CART builds trees by recursively splitting the variable space based on the impurity of the variables to determine the split till the termination condition is met (Santhanam and Sundaram, 2010). The Random Forest algorithm takes random subsets of features and uses CART to grow a great diversity of Decision Trees. A greater tree diversity trades a higher bias for a lower variance,  resulting in an overall better model (Geron, 2019).
+A Random Forest model randomly selects a small group of input variables to split on at each node. Using CART methodology can grow the tree to maximum size (Breiman, 2001).  CART is known as Classification and Regression Trees. CART builds trees by recursively splitting the variable space based on the impurity of the variables to determine the split till the termination condition is met (Santhanam and Sundaram, 2010). The Random Forest algorithm takes random subsets of features and uses CART to grow a great diversity of Decision Trees. A greater tree diversity trades a higher bias for a lower variance,  resulting in an overall better model (G\'eron, 2019).
 
 # Testing
 
@@ -111,35 +111,70 @@ The Random Forest algorithm is a popular methodology due to its many features an
 
 
 
-# References
+\begin{thebibliography}{12}
+
+\bibitem{samuel} 
+Arthur L. Samuel. 
+\textit{  \href{https://hci.iwr.uni-heidelberg.de/system/files/private/downloads/636026949/report_frank_gabel.pdf}{Some studies in machine learning using
+the game of checkers}}.
+1959.
+
+\bibitem{goel} 
+Eesha Goel and Er. Abhilasha. 
+\textit{  \href{https://web.archive.org/web/20180602125325id_/http://ijarcsse.com/docs/papers/Volume_7/1_January2017/V7I1-01113.pdf}{Random Forest: A Review}}.
+2017.
+
+\bibitem{tkho} 
+Tin Kam Ho. 
+\textit{  \href{https://ieeexplore.ieee.org/document/598994}{Random decision forests}}.
+1995.
+
+\bibitem{dtex}
+R - Decision Tree.
+\textit{  \url{https://www.tutorialspoint.com/r/r_decision_tree.htm}}.
 
 
+\bibitem{geron} 
+Aur\'elien G\'eron.
+\textit{ \href{https://www.oreilly.com/library/view/hands-on-machine-learning/9781492032632/}{Hands-on Machine Learning with
+Scikit-Learn, Keras, and
+TensorFlow
+Concepts, Tools, and Techniques to
+Build Intelligent Systems}}.
+2019.
 
-[ [1.] L. Breiman, Random Forest, 2001](https://link.springer.com/content/pdf/10.1023/A:1010933404324.pdf)
+\bibitem{breiman} 
+Leo Breiman.
+\textit{ \href{https://link.springer.com/content/pdf/10.1023/A:1010933404324.pdf}{Random Forest} }.
+2001.
+
+\bibitem{sansun} 
+T. Santhanam and Shyam Sundaram .
+\textit{ \href{https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.165.8749&rep=rep1&type=pdf}{Application of CART Algorithm in Blood Donors Classification}}.
+2010.
+
+\bibitem{confuse} 
+Sofia Visa, Brian Ramsay, Anca Ralescu, and Esther van der Knaap.
+\textit{ \href{http://ceur-ws.org/Vol-710/paper37.pdf}{Confusion Matrix-based Feature Selection}}.
+2011.
+
+\bibitem{ovarian} 
+A. Arfiani and Z. Rustam.
+\textit{ \href{https://aip.scitation.org/doi/pdf/10.1063/1.5132473}{Ovarian cancer data classification using
+bagging and random forest}}.
+2019.
+
+\bibitem{finfraud} 
+Chengwei Liu, Yixiang Chan, Syed Hasnain Alam Kazmi, and Hao Fu.
+\textit{ \href{https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2625215}{Financial Fraud Detection Model: Based on Random Forest}}.
+2015.
+
+\bibitem{stock} 
+Luckyson Khaidem, Snehanshu Saha, and Sudeepa Roy Dey.
+\textit{ \href{https://arxiv.org/pdf/1605.00003.pdf}{Predicting the direction of stock market prices
+using random forest}}.
+2016.
 
 
-[ [2.] E. Goel and Er. Abhilasha, Random Forest: A Review, 2017](https://web.archive.org/web/20180602125325id_/http://ijarcsse.com/docs/papers/Volume_7/1_January2017/V7I1-01113.pdf)
-
-[ [3.] A. L. Samuel, "Some studies in machine learning using the game of checkers," in IBM Journal of Research and Development, vol. 44, no. 1.2, pp. 206-226, Jan. 2000, doi: 10.1147/rd.441.0206.](https://hci.iwr.uni-heidelberg.de/system/files/private/downloads/636026949/report_frank_gabel.pdf)
-
-[ [4.] A. Arfiani and Z. Rustam, "Ovarian Cancer Data Classification Using Bagging and Random Forest", AIP Conference Proceedings 2168, 020046, Nov. 2019](https://aip.scitation.org/doi/pdf/10.1063/1.5132473)
-
-
-[ [5.] D. Bhalla, Complete Guide to Random Forest in R, 2015](https://www.listendata.com/2014/11/random-forest-with-r.html)
-
-[ [6.] N. Donges, A complete guide to random forest algorithm, 2019](https://builtin.com/data-science/random-forest-algorithm)
-
-[ [7.] C. Liu, Y. Chan, S. Kazmi, H. Fu, "Financial Fraud Detection Model: Based on Random Forest", 2015 ](https://poseidon01.ssrn.com/delivery.php?ID=424069105013095068066030080003107112050024004033095068067067008076106067117077104022028097000118014120007089115100076107099007029055059029004095115082098126015089069014039053001078089024075118105085070125122092112011109010010101002010127071031120006116&EXT=pdf&INDEX=TRUE)
-
-[ [8.] T.K. Ho, "Random decision forests," Proceedings of 3rd International Conference on Document Analysis and Recognition, 1995 ](https://ieeexplore.ieee.org/document/598994)
-
-[ [9.] T. Santhanam and S. Sundaram, "Application of CART Algorithm in Blood Donors Classification", 2010](https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.165.8749&rep=rep1&type=pdf)
-
-
-[ [10.] L. Khaidem, S. Saha, S. Dey, "Predicting the direction of stock market prices using random forest", 2016](https://arxiv.org/pdf/1605.00003.pdf)
-
-
-[ [11.] Decision tree in R Tutorial](https://www.tutorialspoint.com/r/r_decision_tree.htm)
-
-[ [12.] Random Forest in R Tutorial](https://www.tutorialspoint.com/r/r_random_forest.htm)
+\end{thebibliography}
 
